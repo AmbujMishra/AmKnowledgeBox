@@ -14,4 +14,16 @@ OpenGL ES 3.1 - This API specification is supported by Android 5.0 (API level 21
 http://developer.android.com/training/graphics/opengl/index.html
 Go through each lessons,
 
+Basics of OpenGL primitives,
+http://obviam.net/index.php/opengl-es-android-displaying-graphical-elements-primitives/
+
+ Each object is created from primitives which in the case of OpenGL is a triangle. Every triangle has a face and a backface.
+ A triangle is defined by 3 points in space. A point is called a vertex (vertices plural).
+ A triangle is called a primitive. A primitive is the simplest type OpenGL understands and is able to graphically represent.
+ It is very simple. 3 vertices define a triangle. There are other primitives as well, like quads but we’ll stick to the basics. Every shape can be broken down into triangles.
+ We mentioned the face of the triangle before.
+ Why is it important? In 3D you will have objects with parts facing towards you, the player and parts facing away from you. In order to make the drawing efficient, OpenGL will not draw the triangles facing away from you as it is not necessary because they will be hidden by the triangles facing towards you anyway. This is called backface culling.
+How does OpenGL determine this? This is determined by the order of the vertices when drawing the triangle. If the order is counter clockwise then it is a face (green triangle). Clockwise order of the vertices means it is a backface (the red triangle). This is the default setting but it can be changed of course. The following diagram illustrates just that.
+
+
 My code:
