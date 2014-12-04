@@ -1,0 +1,3 @@
+http://stackoverflow.com/questions/447898/what-is-object-serialization
+
+What is Java Serialization? Primary purpose of java serialization is to write an object into a stream, so that it can be transported through a network and that object can be rebuilt again. When there are two different parties involved, you need a protocol to rebuild the exact same object again. Java serialization API just provides you that. Other ways you can leverage the feature of serialization is, you can use it to perform a deep copy.
