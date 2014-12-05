@@ -25,5 +25,9 @@ http://obviam.net/index.php/opengl-es-android-displaying-graphical-elements-prim
  Why is it important? In 3D you will have objects with parts facing towards you, the player and parts facing away from you. In order to make the drawing efficient, OpenGL will not draw the triangles facing away from you as it is not necessary because they will be hidden by the triangles facing towards you anyway. This is called backface culling.
 How does OpenGL determine this? This is determined by the order of the vertices when drawing the triangle. If the order is counter clockwise then it is a face (green triangle). Clockwise order of the vertices means it is a backface (the red triangle). This is the default setting but it can be changed of course. The following diagram illustrates just that.
 
+5/12/2014
+Spritebatch, TextureRegion and Sprite: good read in this link,
 
-My code:
+https://github.com/libgdx/libgdx/wiki/Spritebatch%2C-Textureregions%2C-and-Sprites
+
+
